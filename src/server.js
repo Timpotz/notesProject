@@ -4,7 +4,7 @@ const routes= require('./routes')
 const init = async () => {
     //server.options routes{cors{origin:[]}} to allow same origin access for whole server
     const server = Hapi.server({
-        port: 8000,
+        port: 8080,
         host: process.env.NODE_ENV !== 'production' ? 'localhost' : '0.0.0.0',
         routes: {
           cors: {
